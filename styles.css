@@ -1,0 +1,115 @@
+* {
+  font-family: 'Rubik';
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root{
+  --shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-site {
+  background-image: url('https://raw.githubusercontent.com/MiguelHG2351/ip-address-tracker/141c5d423ab4b8b5e5b960b0acc93f697bc1e4d4/public/images/pattern-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 0;
+  height: 280px;
+}
+
+
+.header-container {
+  width: 90%;
+  margin:  0 auto;
+  position: relative;
+}
+
+
+.header-title {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form input,
+.form button {
+  border: none;
+  outline: none;
+}
+
+.form input {
+  width: 85%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 16px;
+  font-size: 18px;
+  caret-color: green;
+
+}
+
+
+.btn {
+  width: 15%;
+  background-color: #000;
+  padding: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.btn:hover {
+  background-color: #3f3e40;
+
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+  background-color: #fff;
+  padding: 50px 18px;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 21px 0;
+  z-index: 1000;
+}
+
+
+#map {
+  height: 100vh;
+}
+
+@media screen and (min-width: 1440px) {
+  .modal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .modal > div {
+    flex-shrink: 1;
+    flex-basis: 24%;
+    padding: 8px;
+  }
+
+  .modal > div:not(.isp) {
+    border-right: 0.5px solid #e0e0e0;
+  }
+
+  .modal > div h4 {
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    color: #9c9c9c;
+  }
+
+  .modal > div p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+}

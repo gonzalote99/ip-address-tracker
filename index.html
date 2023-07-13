@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img/png" sizes="32x32" href="https://raw.githubusercontent.com/MiguelHG2351/ip-address-tracker/main/public/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>ip address tracker</title>
+</head>
+<body>
+  <header class="header-site">
+     <div class="header-container">
+     <div class="header-title">
+      <h1>ip address tracker</h1>
+     </div>
+     <form id="form" class="form">
+       <input type="text" name="ip" placeholder="search ip address" >
+       <button class="btn" id="btn">
+        <img src="https://raw.githubusercontent.com/MiguelHG2351/ip-address-tracker/141c5d423ab4b8b5e5b960b0acc93f697bc1e4d4/public/images/icon-arrow.svg" alt="">
+       </button>
+     </form>
+     <div class="modal">
+      <div class="ip">
+     <h4>ip address</h4>
+     <p id="ip">loading</p>
+      </div>
+      <div class="location">
+       <h4>location</h4>
+       <p id="location">loading</p>
+      </div>
+      <div class="timezone">
+        <h4>timezone</h4>
+        <p id="timeZone">loading</p>
+      </div>
+      <div class="isp">
+      <h4>isp (internet service provider)</h4>
+      <p id="isp">loading</p>
+      
+      </div>
+     </div>
+     </div>
+  </header>
+  <section class="map">
+   <div id="map">
+    
+   </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
